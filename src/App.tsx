@@ -10,6 +10,7 @@ import FitnessCenter from "./pages/FitnessCenter";
 import ValetParking from "./pages/ValetParking";
 import NotFound from "./pages/NotFound";
 import BookingConfirmation from "./pages/BookingConfirmation";
+import UpClosets from "./pages/UpClosets";
 
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/fitness-center" element={<FitnessCenter />} />
           <Route path="/valet-parking" element={<ValetParking />} />
           <Route path="/bookingconfirmation" element={<BookingConfirmation />} />
+          <Route path="/upclosets" element={<UpClosets />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
